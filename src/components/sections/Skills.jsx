@@ -32,7 +32,7 @@ export function Skills() {
     )
 
     return (
-        <section className={`py-20 px-4 container-skills-${theme}`}>
+        <section id="skills" className={`py-20 px-4 container-skills-${theme} transition-colors duration-300`}>
             <div className={`container mx-auto max-w-6xl`}>
                 <h2 className="text-4xl font-bold text-center mb-12">{t.skills.title}</h2>
                 <div className="grid md:grid-cols-3 gap-6">

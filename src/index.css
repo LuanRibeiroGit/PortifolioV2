@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #0a0a0a
+html {
+  scroll-behavior: smooth;
 }
 
 .back-dark {
+  color: #FAFAFA;
+  border-color: #FFFFFF1A;
+  background-color: #0a0a0a
+}
+.nav-dark {
+  background-color: #0a0a0ab6;
   color: #FAFAFA;
   border-color: #FFFFFF1A;
 }
@@ -37,7 +43,7 @@ body{
   border-color: #FFFFFF1A;
 }
 .container-skills-dark{
-  background-color: #ffffff09;
+  background-color: #0e0e0e;
   color: #FAFAFA;
 }
 .box-skills-dark{
@@ -48,6 +54,10 @@ body{
 
 .back-light {
   background-color: #FAFAFA;
+  border-color: #ececec;
+}
+.nav-light {
+  background-color: #fafafacc;
   border-color: #ececec;
 }
 .button-light:hover{
@@ -72,7 +82,7 @@ body{
     background-color: #363636;
 }
 .container-skills-light{
-  background-color: #fffffff3;
+  background-color: #f5f5f5;
   color: #222222;
 }
 .box-skills-light{

@@ -8,7 +8,7 @@ export function Hero() {
     const { t } = useLanguage()
 
     return (
-        <section className={`min-h-screen back-${theme} flex items-center justify-center px-4 pt-20`}>
+        <section className={`min-h-screen back-${theme} flex items-center justify-center px-4 pt-20 transition-colors duration-300`}>
         <div className="container mx-auto text-center">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -23,8 +23,8 @@ export function Hero() {
             <p className="text-lg max-w-2xl mx-auto mb-8 text-[#969696]">
                 {t.hero.description}
             </p>
-            <button className={`items-center justify-center gap-2 whitespace-nowrap text-sm font-medium px-6 py-[10px] rounded-lg transition-colors button-view-${theme}`}>
-                <a href="">{t.hero.cta}</a>
+            <button className={`items-center justify-center gap-2 whitespace-nowrap text-sm font-medium px-6 py-[10px] rounded-lg button-view-${theme} transition duration-300`}>
+                <a href="#projects">{t.hero.cta}</a>
             </button>
             </motion.div>
         </div>

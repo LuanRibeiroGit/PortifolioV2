@@ -12,22 +12,22 @@ export function Header() {
 
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b back-${theme}`}>
+        <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b nav-${theme} transition-colors duration-300`}>
             <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <a href="#" className="text-2xl font-bold transition-colors">
+                <a href="#" className="text-2xl font-bold ">
                 Portfolio
                 </a>
                 <div className="hidden md:flex items-center gap-8">
-                <a href="#about" className={`transition-colors text-${theme}`}>
+                <a href="#about" className={`text-${theme}`}>
                     {t.nav.about}
                 </a>
-                <a href="#skills" className={`transition-colors text-${theme}`}>
+                <a href="#skills" className={`text-${theme}`}>
                     {t.nav.skills}
                 </a>
-                <a href="#projects" className={`transition-colors text-${theme}`}>
+                <a href="#projects" className={`text-${theme}`}>
                     {t.nav.projects}
                 </a>
-                <a href="#contact" className={`transition-colors text-${theme}`}>
+                <a href="#contact" className={`text-${theme}`}>
                     {t.nav.contact}
                 </a>
                 </div>
