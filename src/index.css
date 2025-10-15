@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.back-dark {
+  background-color: #0a0a0a;
+  color: #FAFAFA;
+  border-color: #FFFFFF1A;
+}
+.button-dark:hover{
+    background-color: #FFFFFF1A;
+}
+.text-dark:hover{
+    color: #ececec;
+}
+.text-title-dark{
+  background: linear-gradient(to right, #b9b9b9, rgba(219, 219, 219, 0.6));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.button-view-dark{
+  background-color: #c9c9c9;
+  color: black;
+}
+.button-view-dark:hover{
+    background-color: #d1d5db;
+}
+
+
+.back-light {
+  background-color: #FAFAFA;
+  border-color: #ececec;
+}
+.button-light:hover{
+    background-color: #ececec;
+}
+.text-light:hover{
+    color: #3d3d3d;
+}
+.text-title-light{
+  background: linear-gradient(to right, #141414, rgba(56, 56, 56, 0.6));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.button-view-light{
+  background-color: #222222;
+  color: #FAFAFA;
+}
+.button-view-light:hover{
+    background-color: #363636;
+}
