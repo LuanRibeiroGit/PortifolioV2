@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
-import { useLanguage } from '../contexts/LanguageContext'
-import { useTheme } from '../contexts/ThemeContext'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { useTheme } from '../../contexts/ThemeContext'
 
 export function Hero() {
     const { theme } = useTheme()

@@ -3,8 +3,9 @@ import { ThemeProvider } from './contexts/ThemeContext'
 import { LanguageProvider } from './contexts/LanguageContext'
 
 import { Header } from './components/layout/Header'
-import { Hero } from './components/Hero'
+import { Hero } from './components/sections/Hero'
 import { Footer } from './components/layout/Footer'
+import { About } from './components/sections/About'
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <LanguageProvider>
         <Header />
         <Hero/>
+        <About/>
         <Footer />
       </LanguageProvider>
     </ThemeProvider>

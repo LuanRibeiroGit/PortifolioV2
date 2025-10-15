@@ -30,6 +30,11 @@
 .button-view-dark:hover{
     background-color: #d1d5db;
 }
+.container-dark{
+  background-color: #ffffff0c;
+  color: #FAFAFA;
+  border-color: #FFFFFF1A;
+}
 
 
 .back-light {
