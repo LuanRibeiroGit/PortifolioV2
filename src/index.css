@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+  background-color: #0a0a0a
+}
 
 .back-dark {
-  background-color: #0a0a0a;
   color: #FAFAFA;
   border-color: #FFFFFF1A;
 }
@@ -35,6 +36,14 @@
   color: #FAFAFA;
   border-color: #FFFFFF1A;
 }
+.container-skills-dark{
+  background-color: #ffffff09;
+  color: #FAFAFA;
+}
+.box-skills-dark{
+  background-color: #FFFFFF1A;
+}
+
 
 
 .back-light {
@@ -61,4 +70,11 @@
 }
 .button-view-light:hover{
     background-color: #363636;
+}
+.container-skills-light{
+  background-color: #fffffff3;
+  color: #222222;
+}
+.box-skills-light{
+  background-color: #e2e2e2;
 }
