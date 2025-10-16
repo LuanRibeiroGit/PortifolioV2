@@ -38,7 +38,7 @@ const projectsData = [
             pt: 'Boilerplate é uma base pronta para iniciar projetos backend, com configurações, scripts, dependências e estrutura organizacional já definidas para iniciar o desenvolvimento.',
             en: 'Boilerplate is a ready-made foundation for starting backend projects, with pre-defined configurations, scripts, dependencies, and organizational structure to kickstart development.'
         },
-        tech: ['React', 'TypeScript', 'Tailwind', 'API'],
+        tech: ['TypeScript', 'NestJS', 'MongoDB', 'Swagger'],
             github: 'https://github.com/LuanRibeiroGit/Boilerplate',
     }
     
