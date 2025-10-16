@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 
 const skillsData = {
     frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'],
-    backend: ['Node.js', 'NestJS', 'Fastify', 'SQL Server', 'REST APIs'],
-    tools: ['Docker', 'Git', 'VS Code', 'Postman', 'Figma']
+    backend: ['Node.js', 'NestJS', 'Fastify', 'SQL Server', 'REST APIs', 'MongoDB'],
+    tools: ['Docker', 'Git', 'VS Code', 'Postman', 'Figma', 'Swagger']
 }
 
 export function Skills() {
