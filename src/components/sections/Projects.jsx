@@ -1,90 +1,121 @@
+import { useState } from 'react';
+
+import { Newdawn } from './projects/Newdawn'
+import { Saldonegativo } from './projects/Saldonegativo'
+
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTheme } from '../../contexts/ThemeContext'
+
 import { FiGithub } from "react-icons/fi";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 import { motion } from 'framer-motion'
+import { Boilerplate } from './projects/Boilerplate';
 
 const projectsData = [
     {
-        title: 'E-commerce Platform',
-        description: {
-        pt: 'Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.',
-        en: 'Complete e-commerce platform with shopping cart, payments, and admin dashboard.'
+        title: 'New Dawn',
+            description: {
+            pt: 'New Dawn é uma plataforma whitelist para agendamento de barbearias, com um painel central de gestão e personalização individual de domínio e estilo ( CSS ) para cada barbearia.',
+            en: 'New Dawn is a whitelist platform for barbershop scheduling, featuring a central management dashboard and custom domain and style ( CSS ) for each barbershop.'
         },
-        tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-        github: '#',
-        demo: '#'
+            tech: ['React', 'TailwindCSS', 'ExpressJS', 'SQLServer'],
+            github: 'https://github.com/LuanRibeiroGit/loginFront',
     },
     {
-        title: 'Task Management App',
-        description: {
-        pt: 'Aplicativo de gerenciamento de tarefas com colaboração em tempo real e notificações.',
-        en: 'Task management app with real-time collaboration and notifications.'
+        title: 'Desk Manager RPA',
+            description: {
+            pt: 'DeskManager RPA é uma automação que detecta chamados como de Saldo Negativo e Pedido Complementar na plataforma ESM DeskManager, resolvendo-os automaticamente.',
+            en: 'DeskManager RPA is an automation that detects tickets such as Negative Balance and Complementary Order in the ESM DeskManager platform, resolving them automatically.'
         },
-        tech: ['Next.js', 'NestJS', 'Prisma', 'WebSocket'],
-        github: '#',
-        demo: '#'
+        tech: ['NodeJS', 'ExpressJS', 'SQLServer'],
+            github: 'https://github.com/LuanRibeiroGit/DeskManager-RPA',
     },
     {
-        title: 'Weather Dashboard',
-        description: {
-        pt: 'Dashboard de previsão do tempo com gráficos interativos e geolocalização.',
-        en: 'Weather forecast dashboard with interactive charts and geolocation.'
+        title: 'Boilerplate',
+            description: {
+            pt: 'Boilerplate é uma base pronta para iniciar projetos backend, com configurações, scripts, dependências e estrutura organizacional já definidas para iniciar o desenvolvimento.',
+            en: 'Boilerplate is a ready-made foundation for starting backend projects, with pre-defined configurations, scripts, dependencies, and organizational structure to kickstart development.'
         },
         tech: ['React', 'TypeScript', 'Tailwind', 'API'],
-        github: '#',
-        demo: '#'
+            github: 'https://github.com/LuanRibeiroGit/Boilerplate',
     }
+    
 ]
 
 export function Projects() {
     const { t, language } = useLanguage()
     const { theme } = useTheme()
+    const [modal, setModal] = useState(false)
+    const [indexProjectModal, setIndexProjectModal] = useState()
+
 
     return (
         <section id="projects" className={`py-20 px-4 back-${theme} transition-colors duration-300`}>
-        <div className="container mx-auto max-w-6xl">
-            <h2 className="text-4xl font-bold text-center mb-12">{t.projects.title}</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projectsData.map((project, index) => (
-                <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className={`bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-colors duration-300 container-${theme}`}
-                >
-                <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
-                    <p className="text-muted-foreground mb-4">
-                    {project.description[language]}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, i) => (
-                        <span
-                        key={i}
-                        className={`px-2 py-1 bg-secondary text-secondary-foreground rounded text-xs box-skills-${theme} transition-colors duration-300`}
-                        >
-                        {tech}
-                        </span>
-                    ))}
+            <div className="container mx-auto max-w-6xl">
+                <h2 className="text-4xl font-bold text-center mb-12">{t.projects.title}</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projectsData.map((project, index) => (
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className={`bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-colors duration-300 container-${theme}`}
+                    >
+                    <div className="p-6">
+                        <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
+                        <p className="text-muted-foreground mb-4">
+                        {project.description[language]}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tech.map((tech, i) => (
+                            <span
+                            key={i}
+                            className={`px-2 py-1 bg-secondary text-secondary-foreground rounded text-xs box-skills-${theme} transition-colors duration-300`}
+                            >
+                            {tech}
+                            </span>
+                        ))}
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                            <a className={`w-full sm:w-auto flex items-center border rounded-[8px] p-2 px-3 text-sm font-medium whitespace-nowrap container-${theme} transition-colors duration-300`} href={project.github} target="_blank" rel="noopener noreferrer">
+                                <FiGithub className="h-4 w-4 mr-1" />
+                                {t.projects.viewCode}
+                            </a>
+                            <button onClick={()=>{setModal(true), setIndexProjectModal(index)}} className={`w-full sm:w-auto flex items-center rounded-[8px] p-2 px-3 text-sm font-medium whitespace-nowrap button-view-${theme} transition-colors duration-300`} href={project.demo} target="_blank" rel="noopener noreferrer">
+                                <FaExternalLinkAlt className="h-4 w-4 mr-1" />
+                                {t.projects.viewProject}
+                            </button>
+                        </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                        <button className={`w-full sm:w-auto flex items-center border rounded-[8px] p-2 px-3 text-sm font-medium whitespace-nowrap container-${theme} transition-colors duration-300`} href={project.github} target="_blank" rel="noopener noreferrer">
-                            <FiGithub className="h-4 w-4 mr-1" />
-                            {t.projects.viewCode}
-                        </button>
-                        <button className={`w-full sm:w-auto flex items-center rounded-[8px] p-2 px-3 text-sm font-medium whitespace-nowrap button-view-${theme} transition-colors duration-300`} href={project.demo} target="_blank" rel="noopener noreferrer">
-                            <FaExternalLinkAlt className="h-4 w-4 mr-1" />
-                            {t.projects.viewProject}
-                        </button>
-                    </div>
+                    </motion.div>
+                ))}
                 </div>
-                </motion.div>
-            ))}
+                {   
+                    modal &&
+                        <div onClick={(e) =>{setModal(false), setIndexProjectModal() }} className="fixed inset-0 w-screen bg-black/50 flex items-center justify-center">
+                            <div onClick={(e)=>{ e.stopPropagation()}} className={`relative mt-[50px] xl:w-[50%] w-[90%] text-white rounded-[20px] shadow-lg modal-${theme}`}>
+                                <button onClick={() =>{setModal(false), setIndexProjectModal()}} className='absolute flex items-center justify-center w-12 h-12 right-0 z-50'>
+                                    <IoMdClose size={25} className='z-60'/>
+                                </button>
+                                <div className='sm:p-10 p-5'>
+                                    {  
+                                        indexProjectModal == 0 ?
+                                            <Newdawn/>
+                                        : indexProjectModal == 1 ?
+                                            <Saldonegativo/>
+                                        : indexProjectModal == 2 ?
+                                            <Boilerplate/>
+                                            : null
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                }
             </div>
-        </div>
         </section>
     )
 }

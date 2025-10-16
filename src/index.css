@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  
+  background-color: #0a0a0a
 }
 
 .back-dark {
@@ -49,6 +51,10 @@ html {
 .box-skills-dark{
   background-color: #FFFFFF1A;
 }
+.modal-dark{
+  background-color: #0a0a0ae5;
+  color: #FAFAFA;
+}
 
 
 
@@ -67,7 +73,7 @@ html {
     color: #3d3d3d;
 }
 .text-title-light{
-  background: linear-gradient(to right, #141414, rgba(56, 56, 56, 0.6));
+  background: linear-gradient(to right, #141414, rgba(37, 37, 37, 0.6));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,4 +93,8 @@ html {
 }
 .box-skills-light{
   background-color: #e2e2e2;
+}
+.modal-light{
+  background-color: #fafafae8;
+  color: #222222;
 }

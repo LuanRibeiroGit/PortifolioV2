@@ -17,7 +17,7 @@ export function About() {
                 >
                 <h2 className="text-4xl font-bold text-center mb-12">{t.about.title}</h2>
                 <div className={`bg-card border border-border rounded-lg p-8 shadow-lg container-${theme} transition-colors duration-300`}>
-                    <p className="text-lg text-card-foreground leading-relaxed">
+                    <p className="text-lg leading-relaxed">
                         {t.about.description}
                     </p>
                 </div>
