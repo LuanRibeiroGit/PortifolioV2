@@ -45,7 +45,7 @@ export const translations = {
         },
         contact: {
             title: 'Contato',
-            description: 'Vamos trabalhar juntos! Entre em contato comigo.',
+            description: 'O único limite entre você e seus sonhos é a ação que você ainda não tomou.',
             email: 'Email',
             github: 'GitHub',
             linkedin: 'LinkedIn'
@@ -96,7 +96,7 @@ export const translations = {
         },
         contact: {
             title: 'Contact',
-            description: 'Let\'s work together! Get in touch with me.',
+            description: 'The only limit between you and your dreams is the action you haven’t taken yet.',
             email: 'Email',
             github: 'GitHub',
             linkedin: 'LinkedIn'
