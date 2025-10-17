@@ -30,7 +30,7 @@ export function Contact() {
 
     return (
         <section id="contact" className={`py-20 px-4 container-skills-${theme} transition-colors duration-300`}>
-            <div className="container mx-auto max-w-4xl text-center">
+            <div className="mx-auto max-w-4xl text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export function Contact() {
                     viewport={{ once: true }}
                 >
                 <h2 className="text-4xl font-bold mb-6">{t.contact.title}</h2>
-                <p className="text-lg text-muted-foreground mb-12">
+                <p className="text-lg mb-12">
                     {t.contact.description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

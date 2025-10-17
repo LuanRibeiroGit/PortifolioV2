@@ -66,15 +66,15 @@ export function Projects() {
                         className={`bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-colors duration-300 container-${theme}`}
                     >
                     <div className="p-6">
-                        <h3 className="text-xl font-semibold mb-3 text-card-foreground">{project.title}</h3>
-                        <p className="text-muted-foreground mb-4">
+                        <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                        <p className="mb-4">
                         {project.description[language]}
                         </p>
                         <div className="flex flex-wrap gap-2 mb-4">
                         {project.tech.map((tech, i) => (
                             <span
                             key={i}
-                            className={`px-2 py-1 bg-secondary text-secondary-foreground rounded text-xs box-skills-${theme} transition-colors duration-300`}
+                            className={`px-2 py-1 rounded text-xs box-skills-${theme} transition-colors duration-300`}
                             >
                             {tech}
                             </span>
