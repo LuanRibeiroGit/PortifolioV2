@@ -1,5 +1,5 @@
 <div align="start">
-  <h1>Hello World! Eu sou Luan Ribeiro 👋</h1>
+  <h1>Hello World! Eu sou o Luan Ribeiro 👋</h1>
   <p>Bem-vindo(a) ao meu espaço digital, onde linhas de código se transformam em soluções inovadoras e ideias ganham vida. Sou um <strong>desenvolvedor fullstack</strong> apaixonado por desvendar os mistérios do backend e esculpir interfaces intuitivas no frontend. Minha jornada é impulsionada pela curiosidade, pela busca incessante por conhecimento e pelo desejo de construir tecnologias que realmente façam a diferença.</p>
 </div>
 
