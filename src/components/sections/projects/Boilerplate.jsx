@@ -9,9 +9,9 @@ import bl4 from './imgs/bl4.png'
 
 const images = [
     bl1,
+    bl4,
     bl2,
     bl3,
-    bl4
 ]
 
 export function Boilerplate() {
