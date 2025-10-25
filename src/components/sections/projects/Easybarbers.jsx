@@ -31,7 +31,6 @@ export function Easybarbers() {
                     autoPlay
                     loop
                     muted
-                    controls
                     playsInline
                     className='w-full sm:h-[400px] h-[150px] object-cover rounded-xl shadow-lg transition-all duration-300'
                 />
@@ -52,6 +51,7 @@ export function Easybarbers() {
                                 autoPlay
                                 loop
                                 muted
+                                playsInline
                                 className="w-20 h-20 object-cover" />
                             }
                         </button>
