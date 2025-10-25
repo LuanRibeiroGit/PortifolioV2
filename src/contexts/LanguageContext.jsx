@@ -32,7 +32,8 @@ export const translations = {
             viewCode: 'Ver Código',
             easybarbers: {
                 title: 'Easy Barbers',
-                description: 'Easy Barbers é uma plataforma whitelist voltada para o agendamento de barbearias. Ela oferece um painel administrativo centralizado, que permite o gerenciamento unificado de todas as barbearias cadastradas. Cada barbearia, por sua vez, conta com seu próprio domínio personalizado e estilo visual exclusivo (CSS customizado), garantindo identidade e autonomia dentro do ecossistema da plataforma.'
+                description: 'Easy Barbers é uma plataforma whitelist voltada para o agendamento de barbearias. Ela oferece um painel administrativo centralizado, que permite o gerenciamento unificado de todas as barbearias cadastradas. Cada barbearia, por sua vez, conta com seu próprio domínio personalizado e estilo visual exclusivo (CSS customizado), garantindo identidade e autonomia dentro do ecossistema da plataforma.',
+                project: 'Ver Projeto'
             },
             saldonegativo: {
                 title: 'DeskManager RPA',
@@ -83,7 +84,8 @@ export const translations = {
             viewCode: 'View Code',
             easybarbers: {
                 title: 'Easy Barbers',
-                description: 'Easy Barbers is a whitelist platform focused on barbershop scheduling. It provides a centralized administrative dashboard that enables unified management of all registered barbershops. Each barbershop has its own custom domain and unique visual style (custom CSS), ensuring individuality and autonomy within the platform’s ecosystem.'
+                description: 'Easy Barbers is a whitelist platform focused on barbershop scheduling. It provides a centralized administrative dashboard that enables unified management of all registered barbershops. Each barbershop has its own custom domain and unique visual style (custom CSS), ensuring individuality and autonomy within the platform’s ecosystem.',
+                project: 'View Project'
             },
             saldonegativo: {
                 title: 'DeskManager RPA',

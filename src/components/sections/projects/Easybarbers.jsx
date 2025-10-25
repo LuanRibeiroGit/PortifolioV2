@@ -57,7 +57,7 @@ export function Easybarbers() {
                     ))}
                 </div>
                 <a href="https://easybarbers.vercel.app" alt="" className={`w-full py-2 sm:w-auto flex items-center text-sm font-medium whitespace-nowrap text-blue-500 hover:text-blue-300`} target="_blank" rel="noopener noreferrer">
-                    ver projeto
+                    {t.projects.easybarbers.project}
                 </a>
             </div>
             <p className='text-center leading-relaxed'>{t.projects.easybarbers.description}</p>
