@@ -32,6 +32,7 @@ export function Easybarbers() {
                     loop
                     muted
                     controls
+                    playsInline
                     className='w-full sm:h-[400px] h-[150px] object-cover rounded-xl shadow-lg transition-all duration-300'
                 />
                 ) : (
