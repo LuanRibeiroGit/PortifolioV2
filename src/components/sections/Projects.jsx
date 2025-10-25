@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Newdawn } from './projects/Newdawn'
+import { Easybarbers } from './projects/Easybarbers'
 import { Saldonegativo } from './projects/Saldonegativo'
 
 import { useLanguage } from '../../contexts/LanguageContext'
@@ -15,10 +15,10 @@ import { Boilerplate } from './projects/Boilerplate';
 
 const projectsData = [
     {
-        title: 'New Dawn',
+        title: 'Easy barbers',
             description: {
-            pt: 'New Dawn é uma plataforma whitelist para agendamento de barbearias, com um painel central de gestão e personalização individual de domínio e estilo ( CSS ) para cada barbearia.',
-            en: 'New Dawn is a whitelist platform for barbershop scheduling, featuring a central management dashboard and custom domain and style ( CSS ) for each barbershop.'
+            pt: 'Easy barbers é uma plataforma whitelist para agendamento de barbearias, com um painel central de gestão e personalização individual de domínio e estilo ( CSS ) para cada barbearia.',
+            en: 'Easy barbers is a whitelist platform for barbershop scheduling, featuring a central management dashboard and custom domain and style ( CSS ) for each barbershop.'
         },
             tech: ['React', 'TailwindCSS', 'ExpressJS', 'SQLServer'],
             github: 'https://github.com/LuanRibeiroGit/loginFront',
@@ -104,7 +104,7 @@ export function Projects() {
                                 <div className='sm:p-10 p-5'>
                                     {  
                                         indexProjectModal == 0 ?
-                                            <Newdawn/>
+                                            <Easybarbers/>
                                         : indexProjectModal == 1 ?
                                             <Saldonegativo/>
                                         : indexProjectModal == 2 ?
