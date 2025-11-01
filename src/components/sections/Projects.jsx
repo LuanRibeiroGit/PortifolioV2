@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { Easybarbers } from './projects/Easybarbers'
 import { Saldonegativo } from './projects/Saldonegativo'
+import { Newdawn } from './projects/Newdawn'
+import { Boilerplate } from './projects/Boilerplate';
 
 import { useLanguage } from '../../contexts/LanguageContext'
 import { useTheme } from '../../contexts/ThemeContext'
@@ -11,7 +13,6 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 import { motion } from 'framer-motion'
-import { Boilerplate } from './projects/Boilerplate';
 
 const projectsData = [
     {
@@ -106,7 +107,8 @@ export function Projects() {
                                         indexProjectModal == 0 ?
                                             <Easybarbers/>
                                         : indexProjectModal == 1 ?
-                                            <Saldonegativo/>
+                                            //<Saldonegativo/>
+                                            <Newdawn/>
                                         : indexProjectModal == 2 ?
                                             <Boilerplate/>
                                             : null
