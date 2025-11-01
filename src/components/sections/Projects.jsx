@@ -21,17 +21,24 @@ const projectsData = [
             pt: 'Easy barbers é uma plataforma whitelist para agendamento de barbearias, com um painel central de gestão e personalização individual de domínio e estilo ( CSS ) para cada barbearia.',
             en: 'Easy barbers is a whitelist platform for barbershop scheduling, featuring a central management dashboard and custom domain and style ( CSS ) for each barbershop.'
         },
-            tech: ['React', 'TailwindCSS', 'ExpressJS', 'SQLServer'],
-            github: 'https://github.com/LuanRibeiroGit/loginFront',
+            tech: ['NextJS', 'TailwindCSS', 'NestJS', 'MongoDB'],
     },
+    // {
+    //     title: 'Desk Manager RPA',
+    //         description: {
+    //         pt: 'DeskManager RPA é uma automação que detecta chamados como de Saldo Negativo e Pedido Complementar na plataforma ESM DeskManager, resolvendo-os automaticamente.',
+    //         en: 'DeskManager RPA is an automation that detects tickets such as Negative Balance and Complementary Order in the ESM DeskManager platform, resolving them automatically.'
+    //     },
+    //     tech: ['NodeJS', 'ExpressJS', 'SQLServer'],
+    //         github: 'https://github.com/LuanRibeiroGit/DeskManager-RPA',
+    // },
     {
-        title: 'Desk Manager RPA',
+        title: 'New Dawn',
             description: {
-            pt: 'DeskManager RPA é uma automação que detecta chamados como de Saldo Negativo e Pedido Complementar na plataforma ESM DeskManager, resolvendo-os automaticamente.',
-            en: 'DeskManager RPA is an automation that detects tickets such as Negative Balance and Complementary Order in the ESM DeskManager platform, resolving them automatically.'
+            pt: 'New Dawn é uma empresa especializada na criação de landing pages e portfólios profissionais, ajudando marcas e pessoas a se destacarem com design moderno e desempenho otimizado.',
+            en: 'New Dawn is a company specialized in creating landing pages and professional portfolios, helping brands and individuals stand out with modern design and optimized performance.'
         },
-        tech: ['NodeJS', 'ExpressJS', 'SQLServer'],
-            github: 'https://github.com/LuanRibeiroGit/DeskManager-RPA',
+        tech: ['TypeScript', 'NextJS', 'React', 'TailwindCSS'],
     },
     {
         title: 'Boilerplate',

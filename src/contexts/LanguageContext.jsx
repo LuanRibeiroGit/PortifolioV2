@@ -35,9 +35,13 @@ export const translations = {
                 description: 'Easy Barbers é uma plataforma whitelist voltada para o agendamento de barbearias. Ela oferece um painel administrativo centralizado, que permite o gerenciamento unificado de todas as barbearias cadastradas. Cada barbearia, por sua vez, conta com seu próprio domínio personalizado e estilo visual exclusivo (CSS customizado), garantindo identidade e autonomia dentro do ecossistema da plataforma.',
                 project: 'Ver Projeto'
             },
-            saldonegativo: {
-                title: 'DeskManager RPA',
-                description: 'DeskManager RPA é uma automação desenvolvida para identificar chamados de Saldo Negativo e Pedido Complementar na plataforma ESM DeskManager, permitindo a resolução automática dos chamados, agilizando processos internos e reduzindo a necessidade de intervenção manual.'
+            // saldonegativo: {
+            //     title: 'DeskManager RPA',
+            //     description: 'DeskManager RPA é uma automação desenvolvida para identificar chamados de Saldo Negativo e Pedido Complementar na plataforma ESM DeskManager, permitindo a resolução automática dos chamados, agilizando processos internos e reduzindo a necessidade de intervenção manual.'
+            // },
+            newdawn: {
+                title: 'New Dawn',
+                description: 'A New Dawn é uma empresa especializada na criação de landing pages e portfólios profissionais, unindo design moderno, desempenho e experiência do usuário. Nosso objetivo é ajudar marcas e profissionais a construírem uma presença digital forte e atraente, transformando ideias em experiências visuais que geram conexão e credibilidade.'
             },
             boilerplate: {
                 title: 'Boilerplate',
@@ -87,9 +91,13 @@ export const translations = {
                 description: 'Easy Barbers is a whitelist platform focused on barbershop scheduling. It provides a centralized administrative dashboard that enables unified management of all registered barbershops. Each barbershop has its own custom domain and unique visual style (custom CSS), ensuring individuality and autonomy within the platform’s ecosystem.',
                 project: 'View Project'
             },
-            saldonegativo: {
-                title: 'DeskManager RPA',
-                description: 'DeskManager RPA is an automation designed to identify tickets related to Negative Balance and Complementary Order in the ESM DeskManager platform, enabling automatic ticket resolution, streamlining internal processes and reducing the need for manual intervention.'
+            // saldonegativo: {
+            //     title: 'DeskManager RPA',
+            //     description: 'DeskManager RPA is an automation designed to identify tickets related to Negative Balance and Complementary Order in the ESM DeskManager platform, enabling automatic ticket resolution, streamlining internal processes and reducing the need for manual intervention.'
+            // },
+            newdawn: {
+                title: 'New Dawn',
+                description: 'New Dawn is a company specialized in creating landing pages and professional portfolios, combining modern design, performance, and user experience. Our goal is to help brands and professionals build a strong and attractive digital presence, turning ideas into visual experiences that create connection and credibility.'
             },
             boilerplate: {
                 title: 'Boilerplate',

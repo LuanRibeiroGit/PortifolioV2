@@ -23,7 +23,7 @@ export function Newdawn() {
 
     return (
         <div className='flex flex-col gap-5'>
-            <h1 className='text-4xl font-bold'>{t.projects.saldonegativo.title}</h1>
+            <h1 className='text-4xl font-bold'>{t.projects.newdawn.title}</h1>
             <div>
                 <img src={selected} alt="" className='w-full sm:h-[400px] h-[150px] object-cover rounded-xl shadow-lg transition-all duration-300'/>
             </div>
@@ -37,7 +37,7 @@ export function Newdawn() {
                     </button>
                 ))}
             </div>
-            <p className='text-center leading-relaxed'>{t.projects.saldonegativo.description}</p>
+            <p className='text-center leading-relaxed'>{t.projects.newdawn.description}</p>
         </div>
     )
 }
