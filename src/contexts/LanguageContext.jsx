@@ -41,7 +41,8 @@ export const translations = {
             // },
             newdawn: {
                 title: 'New Dawn',
-                description: 'A New Dawn é uma empresa especializada na criação de landing pages e portfólios profissionais, unindo design moderno, desempenho e experiência do usuário. Nosso objetivo é ajudar marcas e profissionais a construírem uma presença digital forte e atraente, transformando ideias em experiências visuais que geram conexão e credibilidade.'
+                description: 'A New Dawn é uma empresa especializada na criação de landing pages e portfólios profissionais, unindo design moderno, desempenho e experiência do usuário. Nosso objetivo é ajudar marcas e profissionais a construírem uma presença digital forte e atraente, transformando ideias em experiências visuais que geram conexão e credibilidade.',
+                project: 'Ver Projeto'
             },
             boilerplate: {
                 title: 'Boilerplate',
@@ -97,7 +98,8 @@ export const translations = {
             // },
             newdawn: {
                 title: 'New Dawn',
-                description: 'New Dawn is a company specialized in creating landing pages and professional portfolios, combining modern design, performance, and user experience. Our goal is to help brands and professionals build a strong and attractive digital presence, turning ideas into visual experiences that create connection and credibility.'
+                description: 'New Dawn is a company specialized in creating landing pages and professional portfolios, combining modern design, performance, and user experience. Our goal is to help brands and professionals build a strong and attractive digital presence, turning ideas into visual experiences that create connection and credibility.',
+                project: 'View Project'
             },
             boilerplate: {
                 title: 'Boilerplate',
