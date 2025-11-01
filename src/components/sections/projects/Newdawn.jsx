@@ -2,17 +2,15 @@ import { useState } from 'react'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { useTheme } from '../../../contexts/ThemeContext'
 
-import sn1 from './imgs/sn1.jpg'
-import sn2 from './imgs/sn2.jpg'
-import sn3 from './imgs/sn3.jpg'
-import sn4 from './imgs/sn4.jpg'
-import sn5 from './imgs/sn5.jpg'
+
+import nd1 from './imgs/nd1.jpg'
+import nd2 from './imgs/nd2.jpg'
+import nd3 from './imgs/nd3.jpg'
 
 const images = [
-    sn4,
-    sn3,
-    sn1,
-    sn5
+    nd1,
+    nd2,
+    nd3
 ]
 
 export function Newdawn() {
